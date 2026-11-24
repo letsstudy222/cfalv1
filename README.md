@@ -1,3 +1,9 @@
+# Study Hub v6.3 — Learning Experience Redesign
+
+Bản đầy đủ 61 file ở thư mục gốc. Upload tất cả sau khi giải nén vào GitHub Pages, main / root. Không upload nguyên ZIP. Bản này giữ nguyên dataset 365 LOS/6.803 MCQ của v6.2. `index.html` và `deep.html` dùng giao diện mới; `legacy.html` và `legacy-deep.html` giữ nguyên cách trình bày cũ. `study-index.js` là chỉ mục nhẹ, `study.js` tải dataset theo môn khi cần, `quant-bridge.js` đưa 8 bài HTML Quant vào trình học mới. Không phụ thuộc CDN/backend. Đáp án cũ vẫn dùng key localStorage `cfa26-studyhub:quiz:v1:`; tiến độ đọc/thẻ/lịch sử mới dùng key riêng. Sao lưu tại Cài đặt & dữ liệu. Nội dung cũ là bản nháp học thuật, chưa nghiệm thu toàn diện; các mô phỏng là minh họa, mock ngẫu nhiên không phải đề chính thức.
+
+---
+
 # CFA Level I 2026 Study Hub v6.2 — Static GitHub Pages
 
 Release v6.2: 55 files; LM4 GIPS (5 LOS) and LM5 Ethics Application (2 LOS). 85 theory sections, 18 frameworks, 95 worked cases, 95 English MCQs, 198 flashcards. All 365/365 catalog LOS covered by detailed academic drafts; 6,803 detailed MCQs. This is a coverage milestone, not academic certification. Next: full academic/coverage gap audit, QBank/Mock/prerequisite mapping, legacy generic question quality and actual hosted deployment checks. Update deep-eth.js, app.js, index.html, README.md; earlier data and progress keys retained.
