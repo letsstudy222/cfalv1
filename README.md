@@ -1,3 +1,24 @@
+# v6.7 — Source-separated practice, collapsible sidebar, Equity LM4
+
+- Two distinct practice areas: original Study Hub MCQs (unvalidated draft) and actual source PDF locators (not copied publisher content). Source library has 448 question/solution locators with physical PDF pages, plus 496 exercise-related PDFs indexed by filename. PDF bytes remain local; select original files in the browser. SHA-256 comparison where Web Crypto is available, otherwise explicitly labeled filename/size fallback. No source PDF scoring or automatic academic certification.
+- Sidebar toggle on desktop and mobile. Desktop preference persists; mobile opens as a dismissible overlay. Existing answer IDs and storage format retained.
+- Equity LM4: 8 LOS expanded, 24 new original English MCQs with bilingual feedback and 16 bilingual concepts/cards. 79 new original-document locators. Academic review remains partial. Progress: 4/93 modules and 38/365 LOS targeted expansion, 0 final acceptances.
+- Static site: upload 62 root files; no backend or build. Backup progress first. Do not upload private audit.
+
+# v6.6 — Equity LM3 Market Efficiency
+
+7 LOS expanded; 29 original English MCQs, 19 new bilingual concepts/cards, 5 examples, 2 formula entries, 3 visual summaries and Event Study Lab. 35 pre-existing concept/card translations, 21 pre-existing MCQ explanations and 7 old example explanations added in English. All older fields and IDs retained. Targeted source review only, not final acceptance. Progress: 3/93 modules and 30/365 LOS received targeted expansion; 0 final academic acceptances. Backup progress before upload.
+
+# v6.5 — Equity LM1 residual review and LM2 index expansion
+
+55 new original MCQs, 26 bilingual concepts/cards, 13 worked examples and index weighting lab. LM2 existing sections, questions and cards retain order; English explanations added. Targeted review, not complete academic acceptance. See private QA. No storage-key changes.
+
+# v6.4 — Equity LM1 targeted expansion
+
+- 12 LOS expanded; 58 original English MCQs appended; 35 bilingual concepts and flashcards, 12 worked examples, 3 formula entries. Source audit remains in progress. Language selector applies to newly authored material; old Vietnamese material falls back without pretending it is translated.
+- Order book lab in LM1 LOS 7/8/10. Retains all original question positions and storage keys. Back up progress before replacing files.
+- Static GitHub Pages, no build. Upload the 61 root files, not the private audit ZIP.
+
 # Study Hub v6.3 — Learning Experience Redesign
 
 Bản đầy đủ 61 file ở thư mục gốc. Upload tất cả sau khi giải nén vào GitHub Pages, main / root. Không upload nguyên ZIP. Bản này giữ nguyên dataset 365 LOS/6.803 MCQ của v6.2. `index.html` và `deep.html` dùng giao diện mới; `legacy.html` và `legacy-deep.html` giữ nguyên cách trình bày cũ. `study-index.js` là chỉ mục nhẹ, `study.js` tải dataset theo môn khi cần, `quant-bridge.js` đưa 8 bài HTML Quant vào trình học mới. Không phụ thuộc CDN/backend. Đáp án cũ vẫn dùng key localStorage `cfa26-studyhub:quiz:v1:`; tiến độ đọc/thẻ/lịch sử mới dùng key riêng. Sao lưu tại Cài đặt & dữ liệu. Nội dung cũ là bản nháp học thuật, chưa nghiệm thu toàn diện; các mô phỏng là minh họa, mock ngẫu nhiên không phải đề chính thức.
