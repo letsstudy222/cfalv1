@@ -1,3 +1,10 @@
+# v13.8 — Giao diện học tập và lưu học liệu một lần
+
+- Giữ nguyên toàn bộ dữ liệu v13.7 (534 nguồn, gói cá nhân **CFA_2026_Private_Study_Data_v137.json.gz**, cùng SHA-256). Không cần tải lại gói nếu đã có.
+- Chọn gói cá nhân một lần; website xác thực và lưu bản nén trong IndexedDB của trình duyệt, tự mở khi quay lại. Không truyền gói lên mạng. Lưu thành công hiển thị “Học liệu đã lưu trên thiết bị”.
+- Nếu dùng trình duyệt ẩn danh, thiếu dung lượng, xóa dữ liệu trang, đổi tên miền/thiết bị, có thể cần nạp lại. Tùy chọn xóa gói trong Quản lý học liệu không xóa tiến độ. PDF gốc vẫn là tùy chọn đối chiếu.
+- Màn hình Học liệu & luyện đề đưa nút học lên đầu, thu gọn thông tin quản trị PDF và kiểm định. Không thêm nội dung học thuật trong bản sửa giao diện này; các giới hạn v13.7 vẫn còn.
+
 # v13.7 — SAPP Revision Mindmaps và Kaplan QuickSheet
 
 - Cập nhật 64 file website, giữ nguyên tên file. Nạp gói cá nhân `CFA_2026_Private_Study_Data_v137.json.gz` thay v13.6 (SHA-256 `f3ac6bc059b26bf7e1daa0d4544b9bb7b5e612555fee82b132523111ba183ad6`); không upload gói cá nhân lên GitHub công khai.
