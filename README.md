@@ -1,3 +1,18 @@
+# Study Hub v14.0 — thiết kế lại luồng tự học
+
+**Cài đặt:** giải nén ZIP, upload 67 file vào cùng thư mục gốc GitHub Pages (ghi đè `index.html`, `private-study.js`, README; thêm `study-v14.js`, `study-v14.css`, `study-archive.html`). Sau khi GitHub Pages hoàn thành triển khai, mở `/#home` và refresh mạnh nếu giao diện cũ còn trong cache. Không đưa gói `.json.gz` lên repository công khai. Bản v14 dùng lại gói `CFA_2026_Private_Study_Data_v137.json.gz` và cùng khóa IndexedDB từ v13.8; nếu gói đã lưu đúng trên trình duyệt, tự khôi phục khi mở nội dung gốc. Nếu chưa lưu, chỉ chọn một lần; quyền lưu phụ thuộc trình duyệt.
+
+## Luồng học
+- Trang chủ tiếp tục đúng module và phần gần nhất; 10 môn; tiến độ đánh dấu đã học thủ công.
+- Môn học → module → 4 tab: Học lý thuyết, Công thức & ví dụ, Tổng kết, Luyện câu hỏi. Lý thuyết là bản tóm lược nhóm kiến thức; chọn ngôn ngữ và đọc nguồn ngay tại phần tương ứng. Liên kết chi tiết cũ vẫn có trong mục đọc tài liệu gốc.
+- Luyện câu hỏi: lọc môn/module/nguồn/trạng thái, chọn số câu và thứ tự. Phiên luyện dùng đúng danh sách đã lọc. Đề thi thử: 52 phiên nguồn không trộn năm. Câu gốc tự chấm theo lời giải; chưa có đồng hồ thi hoặc tự chấm toàn bộ. Ôn câu sai/chưa chắc/đã lưu dùng khóa tiến độ nguồn cũ.
+- Cài đặt: thư viện gốc, thiết lập học liệu, tìm toàn văn, kiến thức nền, xuất tiến độ v14; giao diện cũ tại `study-archive.html`. Giữ tất cả 64 file cũ (cập nhật 3 file), thêm 3 file mới. Không tạo thêm nội dung học thuật/câu hỏi.
+
+## Kiểm thử
+- 399 lượt render Chromium cô lập: 93 × 4 tab + 10 trang môn + 10 trang tổng kết môn + 7 trang chính/tìm kiếm; không có thông báo lỗi render. Thử với gói v13.7 thật: nạp gói, lọc 10 câu Kaplan, chọn A, hiện lời giải, tự chấm sai, ôn lại; 52 phiên Mock; đánh dấu/bỏ đánh dấu module; giao diện 390px không tràn ngang trên trang chủ/bài học. Kiểm tra cú pháp mọi JS, dữ liệu `study-index.js`, `recap-data.js`, `source-bank.js` và toàn bộ JS học liệu cũ nguyên byte. Test DOM bằng script thật, localStorage mô phỏng vì môi trường chặn điều hướng URL/file. Không xác nhận IndexedDB tồn tại qua lần tải lại thật; chưa kiểm thử bản triển khai GitHub. Bản này chỉ sửa trải nghiệm; giới hạn học thuật, 30 câu thiếu lời giải nguồn khớp, ảnh/bảng gốc còn cần PDF giữ nguyên từ v13.7.
+
+---
+
 # v13.8 — Giao diện học tập và lưu học liệu một lần
 
 - Giữ nguyên toàn bộ dữ liệu v13.7 (534 nguồn, gói cá nhân **CFA_2026_Private_Study_Data_v137.json.gz**, cùng SHA-256). Không cần tải lại gói nếu đã có.
