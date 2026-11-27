@@ -1,3 +1,32 @@
+# v15.0 — Rates and Returns pilot only
+
+See PILOT-AUDIT.md for findings, stage gates, scope, test results and limits. Integrated pilot works without a private package. Keep the v13.7 private package for original materials. No rollout to other modules.
+
+---
+
+# v14.2 — Continuous lessons (2026-11-26)
+
+- Replaces one-summary-per-screen Notes with Lesson: a continuous article per module, grouped by the existing source-audit section labels. Contents buttons scroll to the chapter without changing pages; old section deep links still scroll to the corresponding topic. English titles; bilingual content and language selector retained.
+- All 93 modules display all 1,248 existing source-audit rows, 894 formula cards and 1,226 worked-example cards within the continuous lesson. Cards are placed by unambiguous source/page ranges; cards with ambiguous group or different source are retained in Additional Formulas & Examples. Within a group, page-based placement is a navigation aid, not a new academic validation. Quantitative Methods LM1 uses explicit topic placement.
+- Rates and Returns pilot: five new bilingual chapter transitions and twelve detailed explanatory passages, paraphrased from the original CFAI PDF pages 13–45 reopened from the supplied archive. No new invented exercises. Other 92 modules reorganized using existing source-reviewed summaries, not rewritten into exhaustive lectures. All old data files and sources preserved. Existing content is not certified complete at paragraph/table/exhibit level.
+- Formula/Review/Practice tabs, Library, progress keys and private package v13.7 preserved. No new private data package needed. Keep existing source PDFs locally.
+- Verification: isolated Chromium DOM test checked all 93 lessons (exact topic/formula/example counts), table-of-contents jump, module practice access, Library 534 count, and 390px mobile horizontal overflow; no page errors. Node syntax and ZIP integrity checked. Live GitHub Pages and persistent storage not tested in this turn.
+- Deploy: extract all 67 files and overwrite the existing GitHub Pages root; force refresh if old CSS/JS cached.
+
+---
+
+# v14.1 — simpler navigation and visible Library (2026-11-26)
+
+- Start on Subjects: all ten CFA subjects use their original English titles. Module titles and section headings are English; learning explanations retain bilingual text.
+- Library is a main navigation item, listing all 534 original PDFs before local study data is loaded. Search by name, subject or source; 25 results per page.
+- Each module has visible Source Materials buttons for mapped Curriculum, SchweserNotes, SAPP Slides and Mindmap. Subject pages link directly to filtered Library and Question Bank.
+- Read uses the existing local v13.7 study package. If absent, Open original PDF allows selecting the original PDF and matching the expected source without needing the text package. Source package SHA and format unchanged; it is private and not included in this public ZIP.
+- Existing data, legacy screens and progress keys preserved. No new academic content; not an academic completeness certification.
+- Verification: Chromium isolated DOM test checked catalog, 534-document Library, source/subject filters, document search, opening a supplied PDF using the local selection flow, module source buttons, global search, mobile overflow. Direct file URL and live GitHub deployment testing are blocked by environment; persistent browser storage not verified here.
+- Deploy: extract all 67 files into existing GitHub Pages repository root; keep original data package CFA_2026_Private_Study_Data_v137.json.gz locally.
+
+---
+
 # Study Hub v14.0 — thiết kế lại luồng tự học
 
 **Cài đặt:** giải nén ZIP, upload 67 file vào cùng thư mục gốc GitHub Pages (ghi đè `index.html`, `private-study.js`, README; thêm `study-v14.js`, `study-v14.css`, `study-archive.html`). Sau khi GitHub Pages hoàn thành triển khai, mở `/#home` và refresh mạnh nếu giao diện cũ còn trong cache. Không đưa gói `.json.gz` lên repository công khai. Bản v14 dùng lại gói `CFA_2026_Private_Study_Data_v137.json.gz` và cùng khóa IndexedDB từ v13.8; nếu gói đã lưu đúng trên trình duyệt, tự khôi phục khi mở nội dung gốc. Nếu chưa lưu, chỉ chọn một lần; quyền lưu phụ thuộc trình duyệt.
